@@ -1,0 +1,28 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&family=Work+Sans:wght@500&display=swap');
+
+body{
+    background-color: #1E1E1E;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+}
+.container{
+    background-color:antiquewhite;
+    max-width: 100%;
+    width: 900px;
+    margin: 0 auto;
+
+}
+  /* header part end */
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    align-items: center;
+}
+nav > ul{
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+   /* header part end */
