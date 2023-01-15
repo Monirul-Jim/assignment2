@@ -33,6 +33,11 @@ nav > ul{
     text-align: center;
     margin-top: 152px;
 }
+.picture{
+    margin:50px;
+    width: 900px;
+    height: 400px;
+}
 .header-title{
     font-weight: 700;
     font-size: 64px;
@@ -53,11 +58,6 @@ nav > ul{
     color: #FFFFFF;
 }
 /* Brand New  Group of Architects end */
-.picture{
-    margin:50px;
-    width: 900px;
-    height: 400px;
-}
 /* 4pic and Quick list of Our Features part  */
 .news{
     background-color: #FFFFFF;
@@ -83,6 +83,10 @@ nav > ul{
     align-items: center;
     gap: 30px;
 }
+.artitect-image{
+    width: 75%;
+    height: 75%;
+}
 .click{
     background-color:#FF900E;
     width:300px;
@@ -97,7 +101,7 @@ nav > ul{
     font-size: 30px;
 }
 /* article part end */
-/* some parts start */
+/* some fact parts start */
 .some{
     padding-left: 10px;
 }
@@ -131,8 +135,13 @@ nav > ul{
 .sponspor{
     margin-top: 30px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     margin: 30px;
+    
+}
+.spon{
+    width: 153px;
+    height: 50px;
 }
 /* Our Sponspor part end */
       /*footer part start  */
@@ -160,3 +169,59 @@ nav > ul{
 
       }
       /* footer part end */
+      /* media query part start */
+      @media only screen and (min-width:320px) and (max-width:480px) {
+        .architects{
+            justify-content: center;
+            align-items: center;
+        }
+        .header{
+            grid-template-columns: repeat(1,1fr);
+            flex-direction: column;
+        }
+        ul{
+            grid-template-columns: repeat(1,1fr);
+            flex-direction: column;
+        }
+        .team{
+            grid-template-columns: repeat(1,1fr);
+        }
+        .bussines-policy{
+            grid-template-columns: repeat(1,1fr);
+            flex-direction: column-reverse;
+            gap: 20px;
+        }
+        .artitect{
+            grid-template-columns: repeat(1,1fr);
+            flex-direction: column-reverse;
+        }
+        #photo{
+            width: 250px;
+            height: 200px;
+        }
+        .some{
+            justify-content: center;
+            align-items: center;
+        }
+        .click-me{
+            grid-template-columns: repeat(1,1fr);
+            flex-direction: column;
+        }
+        .sponspor{
+            grid-template-columns: repeat(1,1fr);
+            flex-direction: column;
+            row-gap: 40px;
+            justify-content: center;
+            align-items: center;
+        }
+        .our-sponspor{
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            width: 50%;
+            height: 50%;
+        }
+        
+      }
+      /* media query part end */
